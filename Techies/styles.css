@@ -1,0 +1,163 @@
+/* Organize the code based on this structure:
+1. classes targeting outside the box, and the border
+2. classes targeting inside the box */
+
+body {
+  background-color: black;
+  margin-top: 1rem;
+}
+
+.site {
+  margin-left: 1rem;
+  margin-right: 1rem;
+  border-radius: 5px;
+  /*  */
+  box-shadow: rgba(47, 106, 131, 0.12) 0px 2px 4px 0px,
+    rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+  background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+  height: 100%;
+  display: flex;
+  padding: 1rem;
+}
+
+/* Menu styles */
+.headingMenu {
+  margin-right: 1rem;
+  /* Target the tags with the class heading-menu 
+    give it a width of 20% of the whole box
+    give it margin that 1 rem long - rem is a measurement
+    */
+  width: 20%;
+  padding: 1rem;
+  height: 40rem;
+  overflow: auto;
+}
+
+.pagesHeading {
+  /* Targe the tag with the class pagesHeading 
+    put it in the center
+    give it a black background color
+    make the color of the text white
+    give it a padding of 1rem - padding is space inside the box
+    curve the border by 5 pixels
+    */
+  text-align: center;
+  background-color: black;
+  color: white;
+  padding: 1rem;
+  border-radius: 5px;
+}
+
+.pagesMenu {
+  /* Target the element that has the class pagesMenu 
+    see how many boxes there are, and place them horizontally
+    put as much space as possible between the boxes
+    */
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.pagesMenu .menuItem {
+  border-radius: 5px;
+  /* Target the element that has the class pagesMenu 
+    then target the element inside it, that has the class menuItem
+    give the background color of black
+    text color will be white
+    add a border thats 1 pixels thick, solid shaped, color is white
+    add width of 5rem
+    put the text in the center
+    curve the border by 5pixels
+    */
+  background-color: black;
+  color: white;
+  border: 1px solid white;
+  width: 5rem;
+  text-align: center;
+  padding: 0.5rem;
+  text-decoration: none;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+}
+
+nav .menuItem {
+  margin: 0.5rem;
+  border-bottom: 1px solid black;
+  text-decoration: none;
+  color: black;
+  padding: 0.5rem;
+}
+
+:hover.menuItem {
+  /* When the user hovers over the menuItem 
+  give it a black background
+  make the text white
+  */
+  background-color: black;
+  color: white;
+}
+
+/* Profile styles */
+.allProfiles {
+  /* Target the tags that have the class allprofiles */
+  border: 1px solid black;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-bottom: 1rem;
+  overflow: auto;
+  width: 80%;
+  border-radius: 5px;
+  height: 40rem;
+}
+
+.profile {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid black;
+}
+
+.textContent {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  margin-right: 1rem;
+}
+
+.name {
+  background-color: black;
+  padding: 0.5rem;
+  color: white;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.description {
+  line-height: 2rem;
+}
+
+.picture {
+  width: 400px;
+  height: 400px;
+  object-fit: cover;
+  background-color: black;
+  border-radius: 5px;
+  border: 1px solid black;
+}
+
+.contactContribution {
+  display: flex;
+  justify-content: space-between;
+}
+
+.ccItem {
+  border-radius: 5px;
+  text-decoration: none;
+  color: white;
+  background-color: black;
+  padding: 0.5rem;
+}
